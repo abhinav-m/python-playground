@@ -8,7 +8,7 @@ else:
     print("Carry on")
 
 
-#Truthy and falsy values in python
+# Truthy and falsy values in python
 
 if 0:
     print("Falsy.")
@@ -17,10 +17,10 @@ if 1:
     print("Truthy")
 
 
-#Empty strings are falsy in python.
+# Empty strings are falsy in python.
 
 test = input()
 if test:
-    print("You said "+ test)
+    print("You said " + test)
 else:
     print("SAY SOMETHING!!")

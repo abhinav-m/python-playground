@@ -1,5 +1,5 @@
 
-#Strings can be concatenated using the plus oeprator'+'
+# Strings can be concatenated using the plus oeprator'+'
 a = "Check "
 b = " b_Check"
 c = a + b
@@ -11,7 +11,7 @@ d = f"{a} two {b}"
 print(d)
 
 # Older way -> 2.x -> 3.5 format
-d = "{} test {}".format(a,b) # Must be inserted in order.
+d = "{} test {}".format(a, b)  # Must be inserted in order.
 print(d)
 
 # Accessing characters

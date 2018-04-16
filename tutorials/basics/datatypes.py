@@ -1,12 +1,12 @@
 # Some common datatypes.
 
-#bool -> true/false
-test = True #Assigning true to test, notice capital T
-test_2 = False #Uppercase F for false.
+# bool -> true/false
+test = True  # Assigning true to test, notice capital T
+test_2 = False  # Uppercase F for false.
 
-some_string ="A string"
+some_string = "A string"
 
-test_array = [1,2,3,4] # List datatypes.
+test_array = [1, 2, 3, 4]  # List datatypes.
 
 print(type(test_array))
 
@@ -24,10 +24,10 @@ print(dynamic_var)
 dynamic_var = "test"
 print(dynamic_var)
 
-dynamic_var = None #Special type for None values
-print(type(dynamic_var)) #Only one instance None of this class.
+dynamic_var = None  # Special type for None values
+print(type(dynamic_var))  # Only one instance None of this class.
 
-#None -> Pythons version of null. 
+# None -> Pythons version of null.
 new_var = None
 print(new_var)
 
@@ -36,8 +36,8 @@ str_two = " world"
 
 print(str_one + str_two)
 
-#str_test = 8 + "test" this is not allowed in python. Strings cant be added to integers.
-#print(str_test)
+# str_test = 8 + "test" this is not allowed in python. Strings cant be added to integers.
+# print(str_test)
 
 # conversion of data types.
 decimal = 12.3242
