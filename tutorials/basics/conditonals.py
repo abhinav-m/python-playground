@@ -24,3 +24,6 @@ if test:
     print("You said " + test)
 else:
     print("SAY SOMETHING!!")
+
+# Can be compared directly.
+print("a" == "b")
