@@ -40,6 +40,7 @@ if age:
     elif age >= 18:
         print("You can enter, need a wristband")
     else:
+        # Every case is now <= 21
         print("You cant  come in, little one")
 else:
     print("Invalid age")
