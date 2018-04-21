@@ -32,6 +32,6 @@ elif player_1 == 'scissors' and player_2 == 'paper' or player_1 == 'scissors' an
         winner = "player_2"
 
 if winner:
-    print(winner)
+    print(f'{winner} wins')
 else:
     print("Noone won!")
