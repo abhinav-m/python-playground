@@ -15,3 +15,9 @@ for char in string:
 print("Range iterable , includes start, excludes 10")
 for x in range(1, 10):
     print(x)
+
+# while loops run while the condition is 
+x= 10
+while x: # x is falsy when it is zero
+    print(x)
+    x = x - 1
