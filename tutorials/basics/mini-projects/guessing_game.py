@@ -17,5 +17,6 @@ while play:
         play = input("Do you want to play again?")
         if play == 'y' or play == 'Y':
             play = True
+            random_number = random.randint(1, 10)
         else:
             play = False
