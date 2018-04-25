@@ -20,3 +20,4 @@ while play:
             random_number = random.randint(1, 10)
         else:
             play = False
+            print("Thanks for playing!")
