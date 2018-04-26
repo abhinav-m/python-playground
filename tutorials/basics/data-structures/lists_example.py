@@ -1,5 +1,6 @@
 demo_list = ["a", "b", "c", "d"]
 
-print(f"Length of list{len(demo_list)}")
 r = range(1, 10)
+print(f"Length of list{len(list(r))}")
+
 print(list(r))
