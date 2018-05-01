@@ -28,5 +28,5 @@ index = 0
 numbers = [1, 2, 3, 4, 5]
 
 while index < len(numbers):
-    print(f"{index}:{colors:[index]}")
+    print(f"{index}:{numbers[index]}")
     index += 1
