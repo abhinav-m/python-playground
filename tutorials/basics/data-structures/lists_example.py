@@ -16,3 +16,17 @@ print(friends[-1])  # Prints Akshit (last index)
 print("Abhinav" in friends)  # prints true
 
 print("abc" in friends)
+
+
+colors = ["purple", "teal", "magenta", True, 22.3]
+
+# Lists are iterable
+for color in colors:
+    print(color)
+
+index = 0
+numbers = [1, 2, 3, 4, 5]
+
+while index < len(numbers):
+    print(numbers[index])
+    index += 1
