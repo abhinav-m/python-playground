@@ -30,3 +30,10 @@ numbers = [1, 2, 3, 4, 5]
 while index < len(numbers):
     print(f"{index}:{numbers[index]}")
     index += 1
+
+nums = [1, 2, 3, 4]
+# Inserts object BEFORE index.
+nums.insert(5, 4)
+# With negative index , will insert BEFORE last index.
+nums.insert(-1, 5)
+print(nums)
