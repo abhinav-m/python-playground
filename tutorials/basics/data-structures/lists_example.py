@@ -37,3 +37,17 @@ nums.insert(5, 4)
 # With negative index , will insert BEFORE last index.
 nums.insert(-1, 5)
 print(nums)
+
+# Empties a list
+nums.clear()
+print(f"After clearing, nums is {nums}")
+
+# Removing from a selected index.
+nums = [1, 2, 3, 4, 5]
+# Removes from the end and returns removed element.
+removed = nums.pop()
+print(f"After popping 1, nums is {nums} ,removed value is {removed}")
+# Removes from index 3(value 4)
+removed = nums.pop(3)
+print(
+    f"After popping value from index 3, nums is {nums} ,removed value is {removed}")
