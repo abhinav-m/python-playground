@@ -51,3 +51,6 @@ print(f"After popping 1, nums is {nums} ,removed value is {removed}")
 removed = nums.pop(3)
 print(
     f"After popping value from index 3, nums is {nums} ,removed value is {removed}")
+
+first = nums.pop(0)
+print(first)
