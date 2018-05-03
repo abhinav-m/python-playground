@@ -53,4 +53,9 @@ print(
     f"After popping value from index 3, nums is {nums} ,removed value is {removed}")
 
 first = nums.pop(0)
-print(first)
+print(f"Removing first element, list is now {nums} removed is {first}")
+
+
+# lists.remove method -> removes first occurrence of value found in string.
+nums.remove(3)
+print(f"Removes 3 from position 3 in list,list is now {nums}")
