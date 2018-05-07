@@ -50,7 +50,7 @@ with_vowels = "Hello, my name is Abhinav Mishra"
 
 
 # Generate an iterable without vowels
-# and join them with an empty string.
+# and join them with an empty string as a delimiter.
 without_vowels = ''.join(char for char in with_vowels if char not in "aeiou")
 
 print(without_vowels)
