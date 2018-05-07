@@ -44,3 +44,13 @@ print([num for num in nums if num % 2 == 0])
 # else statement can also be added.
 # Note the difference in syntax here.
 print([num * 2 if num % 2 == 0 else num/2 for num in nums])
+
+# Removing vowels from a string using list comprehension.
+with_vowels = "Hello, my name is Abhinav Mishra"
+
+
+# Generate an iterable without vowels
+# and join them with an empty string.
+without_vowels = ''.join(char for char in with_vowels if char not in "aeiou")
+
+print(without_vowels)
