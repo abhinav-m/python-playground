@@ -33,3 +33,14 @@ print([bool(val) for val in ["", {}, [], 0, -1, 1]])
 
 # Conversion of values to string or any other type.
 print([str(num) for num in [1.0, 2.5, 3.14, 9.62]])
+
+
+# List comprehension with conditional logic.
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# if statement can be used with list comprehension
+print([num for num in nums if num % 2 == 0])
+
+
+# else statement can also be added.
+# Note the difference in syntax here.
+print([num * 2 if num % 2 == 0 else num/2 for num in nums])
