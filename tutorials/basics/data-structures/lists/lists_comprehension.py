@@ -54,3 +54,10 @@ with_vowels = "Hello, my name is Abhinav Mishra"
 without_vowels = ''.join(char for char in with_vowels if char not in "aeiou")
 
 print(without_vowels)
+
+
+# Comprehension in nested lists.
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# As the first expression, nested list comprehension can be used to evaluate nested list.
+[[print(val) for val in l] for l in nested_list]

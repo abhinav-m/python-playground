@@ -15,7 +15,7 @@ print(friends[-1])  # Prints Akshit (last index)
 # in operator can be used with lists to check if the value exists in the list
 print("Abhinav" in friends)  # prints true
 
-print(s"abc" in friends)
+print("abc" in friends)
 
 
 colors = ["purple", "teal", "magenta", True, 22.3]
@@ -64,3 +64,9 @@ print(f"Removes 3 from position 3 in list,list is now {nums}")
 nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # Printing value inside inner nested list
 print(nested_list[0][-1])
+
+# Printing values in nested lists
+
+for list in nested_list:
+    for val in list:
+        print(val)
