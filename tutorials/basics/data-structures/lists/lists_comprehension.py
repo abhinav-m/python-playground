@@ -61,3 +61,11 @@ nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 # As the first expression, nested list comprehension can be used to evaluate nested list.
 [[print(val) for val in l] for l in nested_list]
+
+
+# Making a board using a nested list comprehension
+
+# Extracting num in range(1,4) , for 4 elements using range(1,5)
+game_board = [[num for num in range(1, 4)] for val in range(1, 5)]
+
+print(game_board)
