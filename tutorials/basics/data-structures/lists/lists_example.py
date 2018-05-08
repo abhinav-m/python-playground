@@ -59,3 +59,8 @@ print(f"Removing first element, list is now {nums} removed is {first}")
 # lists.remove method -> removes first occurrence of value found in string.
 nums.remove(3)
 print(f"Removes 3 from position 3 in list,list is now {nums}")
+
+# Nested lists ( same as 2d arrays)
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# Printing value inside inner nested list
+print(nested_list[0][-1])
