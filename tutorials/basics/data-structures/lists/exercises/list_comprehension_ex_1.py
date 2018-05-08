@@ -25,3 +25,10 @@ without_vowels_string_1 = ''.join(
 
 without_vowels_string_2 = ''.join(
     char for char in "amazing" if char not in "aeiou")
+
+
+# Generating nested list range.
+list_range = [[x for x in range(0,3)] for num in range(1,4)]
+
+# Generating nested list 10 X 10
+ten_ten = [[x for x in range(0,10)] for val in range(0,10)]
