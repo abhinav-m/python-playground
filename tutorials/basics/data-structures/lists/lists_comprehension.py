@@ -69,3 +69,15 @@ nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 game_board = [[num for num in range(1, 4)] for val in range(1, 5)]
 
 print(game_board)
+
+
+# Making a pattern using conditional logic and nested list comprehensions
+
+pattern_list = [['X' if num %
+                 2 == 0 else 'O' for num in range(1, 4)] for val in range(1, 6)]
+
+print(pattern_list)
+
+# Another example using *
+star_pattern = [["*" for x in range(1, 3)] for x in range(1, 5)]
+print(star_pattern)
