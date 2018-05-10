@@ -17,3 +17,18 @@ print(dictionary_2["name"])
 print(dictionary_2["age"])
 
 print(dictionary_2[age_str])
+
+print("Values in dictionaries")
+
+# Accessing all dictionary values
+for value in cat.values():
+    print(value)
+
+print("Keys in dictionaries")
+# Accessing all dicionary keys
+for key in cat.keys():
+    print(key)
+
+# Accessing both inside loop
+for k, v in cat.items():
+    print(f"key is {k} value is{v} ")
