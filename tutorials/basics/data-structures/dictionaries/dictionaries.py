@@ -8,3 +8,12 @@ print(cat)
 dictionary_2 = dict(name="Abhinav", age="25", works="b4s")
 
 print(dictionary_2)
+
+age_str = "age"
+
+# Accessing dictionary values.
+print(dictionary_2["name"])
+
+print(dictionary_2["age"])
+
+print(dictionary_2[age_str])
