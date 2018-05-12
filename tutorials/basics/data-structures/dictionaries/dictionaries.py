@@ -41,6 +41,7 @@ dictionary_abhinav = {
 
 # Testing if a key is in a dictionary.
 print("name" in dictionary_abhinav)
+print("age" in dictionary_abhinav.keys())
 print("sex" in dictionary_abhinav)
 
 # Testing if a value is in a dictionary.
