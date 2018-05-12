@@ -32,3 +32,16 @@ for key in cat.keys():
 # Accessing both inside loop
 for k, v in cat.items():
     print(f"key is {k} value is{v} ")
+
+dictionary_abhinav = {
+    "name": "Abhinav",
+    "age": "25",
+    "job": "Developer"
+}
+
+# Testing if a key is in a dictionary.
+print("name" in dictionary_abhinav)
+print("sex" in dictionary_abhinav)
+
+# Testing if a value is in a dictionary.
+print("Abhinav" in dictionary_abhinav.values())
