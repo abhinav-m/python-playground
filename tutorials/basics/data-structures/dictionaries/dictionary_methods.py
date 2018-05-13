@@ -62,3 +62,11 @@ dict_new_abhinav = {"name": "Abhinav Mishra"}
 dict_new_abhinav.update(dict_abhinav_2)
 # Updates the reference so you dont need to assign this value to the dictionary.
 print(dict_new_abhinav)
+
+# Only UPDATES , doesn't remove any values.
+dict_new_abhinav.update({})
+
+# Overwrites keys if present in dictionary.
+dict_new_abhinav.update({"age": 30})
+
+print(dict_new_abhinav)
