@@ -35,3 +35,24 @@ print(new_user)
 print(dict_abhinav_copy.get("name"))
 # Note when the value is not present, it returns None. ( can be useful to perform checks of keys in dictionaries)
 print(dict_abhinav_copy.get("sex"))
+
+
+# pop method to remove a key and value
+dict_abhinav_2 = {
+    "name": "Abhinav",
+    "age": 25,
+    "salary": 1000000,
+    "sex": "male"
+}
+
+test = dict_abhinav_2.pop("name")
+# Returns value on successful pop (when key is found)
+print(test)
+
+# Returns key error on unsuccessful pop (when key is not found)
+# print(dict_abhinav_2.pop("abc"))
+
+# popitem method removes a dictionary key and value at random.
+returned = dict_abhinav_2.popitem()
+returned_2 = dict_abhinav_2.popitem()
+print(returned, returned_2)
