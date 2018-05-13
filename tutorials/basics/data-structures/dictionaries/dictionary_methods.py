@@ -56,3 +56,9 @@ print(test)
 returned = dict_abhinav_2.popitem()
 returned_2 = dict_abhinav_2.popitem()
 print(returned, returned_2)
+
+# Update method takes a dictionary and updates (adds) another dictionaries key and value pairs to it.
+dict_new_abhinav = {"name": "Abhinav Mishra"}
+dict_new_abhinav.update(dict_abhinav_2)
+# Updates the reference so you dont need to assign this value to the dictionary.
+print(dict_new_abhinav)
