@@ -81,5 +81,10 @@ answer_4 = {item[0]: item[1] for item in person}
 
 print(answer_3, answer_4)
 
-# make sure your solution is assigned to the answer variable so the tests can work!
+# Assigning default value for each character in iterable string.
 answer_5 = {ch: 0 for ch in "aeiou"}
+
+# Using fromkeys
+answer_6 = dict.fromkeys("aeiou", 0)
+
+print(answer_5, answer_6)
