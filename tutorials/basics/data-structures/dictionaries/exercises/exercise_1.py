@@ -88,3 +88,9 @@ answer_5 = {ch: 0 for ch in "aeiou"}
 answer_6 = dict.fromkeys("aeiou", 0)
 
 print(answer_5, answer_6)
+
+# Generating key value pairs for all ASCII alphabets (capital letters)
+
+answer_7 = {k: chr(k) for k in range(65, 91)}
+
+print(answer_7)
