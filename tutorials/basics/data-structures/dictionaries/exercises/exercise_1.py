@@ -80,3 +80,6 @@ answer_3 = {k: v for k, v in person}
 answer_4 = {item[0]: item[1] for item in person}
 
 print(answer_3, answer_4)
+
+# make sure your solution is assigned to the answer variable so the tests can work!
+answer_5 = {ch: 0 for ch in "aeiou"}
