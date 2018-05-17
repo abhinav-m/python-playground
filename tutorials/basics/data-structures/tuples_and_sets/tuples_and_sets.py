@@ -29,4 +29,24 @@ locations = {
 print(locations)
 
 # Some dictionary methods return tuples
+# Since keys are tuples themselves, returns nested tuples.
 print(locations.items())
+
+# iterating tuples 
+names = ("Abhinav","Dhruv","Pankaj")
+
+for name in names:
+    print(name)
+
+tuple_example = ("A","A","B","C","D")
+
+# count returns the number of times an element occurs in a tuple
+print(tuple_example.count("A"))
+print(tuple_example.count("B"))
+
+# count returns the number of times an element occurs in a tuple
+print(tuple_example.count("A"))
+print(tuple_example.count("B"))
+
+# returns the index of a tuple value
+print(names.index("Dhruv"))
