@@ -13,5 +13,10 @@ print(5 in your_set)
 
 # checking if value is in set
 print(5 in my_set)
-
 # items can't be accessed using index since there is no order.
+# print(my_set[0]) throws error
+
+varied_set = {"Abhinav", 123, 12.235}
+
+for v in varied_set:
+    print(v)
