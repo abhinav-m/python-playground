@@ -18,5 +18,12 @@ print(5 in my_set)
 
 varied_set = {"Abhinav", 123, 12.235}
 
+# Looping through values in a set
 for v in varied_set:
     print(v)
+
+# Common set use - case : Removing duplicate data
+duplicate_list = ["abhinav", "abhinav", "abcd"]
+
+
+print(set(duplicate_list))
