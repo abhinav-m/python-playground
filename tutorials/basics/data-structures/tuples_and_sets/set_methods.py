@@ -25,4 +25,13 @@ my_set.discard(3)  # doesn't throw an error.
 # successful removal.
 my_set.discard(1)
 
+#
 copy_of_set = my_set.copy()
+
+
+set_new = set([1, 2, 3, 4, 5])
+
+set_new.clear()
+
+# clears the set.
+print(set_new)
