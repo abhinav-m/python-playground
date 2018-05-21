@@ -35,3 +35,16 @@ set_new.clear()
 
 # clears the set.
 print(set_new)
+
+
+# Mathematical set methods
+
+math_students = {"Abhinav", "Manish", "Dhruv"}
+
+science_students = {"Akash", "Abhinav", "Lekhraj", "Manish"}
+
+# Getting union of a set.
+print(math_students | science_students)
+
+# Intersection of a set.
+print(math_students & science_students)
