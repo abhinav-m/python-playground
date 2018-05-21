@@ -11,3 +11,13 @@ print(dict_squared)
 # Creating a set out of a string(removing duplicates)
 string_set = {ch for ch in "abhinav"}
 print(string_set)  # order is not guaranteed.
+
+# Set comprehension with conditionals
+
+# Pulling vowels in a string
+
+string_vowel_pull = {ch for ch in "testabc" if ch in "aeiou"}
+print(string_vowel_pull)
+
+# Check if all vowels are present in set
+print(len(string_vowel_pull) == 5)

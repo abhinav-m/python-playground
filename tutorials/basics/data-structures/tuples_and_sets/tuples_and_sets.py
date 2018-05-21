@@ -1,4 +1,4 @@
-# A tuple is an ordered collection / grouping of items, it is immutable.
+# A tuple is an ordered collection / grouping of items, it is immutable. (ordered, immutable) faster than lists.
 
 numbers = (1, 2, 3, 4)
 print(numbers)

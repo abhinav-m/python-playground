@@ -1,4 +1,4 @@
-# Collection of data without duplicate values and order.
+# Collection of data without duplicate values and order.(unordered and unique)
 
 # Creating a set
 # using set constructor
