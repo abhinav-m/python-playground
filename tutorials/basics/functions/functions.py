@@ -23,8 +23,7 @@ print(squared_num)
 
 
 def coin_flip():
-    r = random()
-    if(r > 0.5):
+    if(random() > 0.5):
         return "Heads"
     else:
         return "Tails"
