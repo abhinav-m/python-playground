@@ -1,3 +1,4 @@
+from random import random
 # Function definition syntax
 
 # defining function
@@ -19,3 +20,14 @@ def square(num):
 squared_num = square(2)
 
 print(squared_num)
+
+
+def coin_flip():
+    r = random()
+    if(r > 0.5):
+        return "Heads"
+    else:
+        return "Tails"
+
+
+print(coin_flip())
