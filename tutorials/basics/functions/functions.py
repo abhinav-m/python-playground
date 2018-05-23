@@ -30,3 +30,51 @@ def coin_flip():
 
 
 print(coin_flip())
+
+# default parameters in functions
+
+
+def exponentiate(num, power=2):
+    return num ** power
+
+
+cubed = exponentiate(3, 3)
+
+# Using with default parameter
+squared = exponentiate(2)
+
+print(cubed, squared)
+
+
+def show_info(first_name="abhinav", last_name="mishra"):
+    print(first_name, last_name)
+
+
+# Note if we specify the parameter explicitly we don't need to stick to order.
+show_info(last_name="test", first_name="abc")
+
+show_info("Dhruv", "Dogra")
+
+# functions can be passed as arguments, and also as default parameters.
+
+
+def add(a, b):
+    print(a+b)
+
+
+def subtract(a, b):
+    print(a-b)
+
+# Adding a default parameter (a function , as an argument)
+
+
+def math(a, b, fn=add):
+    fn(a, b)
+
+
+# will add two numbers by default
+math(1, 2)
+
+# will subtract two numbers by default
+
+math(5, 3, subtract)
