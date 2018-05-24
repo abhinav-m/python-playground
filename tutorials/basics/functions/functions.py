@@ -67,6 +67,8 @@ def subtract(a, b):
 
 # Adding a default parameter (a function , as an argument)
 
+# ensure that default parameters are at the end since parameters are assigned in order.
+
 
 def math(a, b, fn=add):
     fn(a, b)
@@ -78,3 +80,16 @@ math(1, 2)
 # will subtract two numbers by default
 
 math(5, 3, subtract)
+
+# Keyword arguments:
+
+
+def full_name(first_name, last_name):
+    print(f"Your full name is {first_name} {last_name}")
+
+
+full_name("Abhinav", "Mishra")
+
+# Using keyword arguments (parameters are specified in function call)
+# Only works in the case we know the parameters, and order of parameters doesn't matter anymore
+full_name(first_name="Mishra", last_name="Abhinav")
