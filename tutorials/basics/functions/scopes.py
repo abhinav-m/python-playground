@@ -35,3 +35,18 @@ def outer():
 
 
 print(outer())
+
+# Must be first line of the function to create a doc
+
+
+def prints_hello_world():
+    """This function prints hello world"""
+    print("Hello world")
+
+
+print(prints_hello_world())
+
+# To print doc for a function
+doc = prints_hello_world.__doc__
+
+print(doc)
