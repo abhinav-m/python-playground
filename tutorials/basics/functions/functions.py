@@ -92,4 +92,5 @@ full_name("Abhinav", "Mishra")
 
 # Using keyword arguments (parameters are specified in function call)
 # Only works in the case we know the parameters, and order of parameters doesn't matter anymore
+# Note even though '=' operator is used in function call, this specifies it to be a keyword argument, and is not the normal assignment.
 full_name(first_name="Mishra", last_name="Abhinav")
