@@ -59,3 +59,17 @@ def last_value_better(l):
 
 print(last_value_better([1, 2, 3, 4, 5]))
 print(last_value_better([]))
+
+
+def number_compare(num_1, num_2):
+    if num_1 > num_2:
+        return "First is greater"
+    elif num_1 < num_2:
+        return "Second is greater"
+    else:
+        return "Numbers are equal"
+
+
+print(number_compare(1, 2))
+print(number_compare(2, 1))
+print(number_compare(1, 1))
