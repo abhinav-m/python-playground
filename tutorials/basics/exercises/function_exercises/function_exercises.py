@@ -73,3 +73,14 @@ def number_compare(num_1, num_2):
 print(number_compare(1, 2))
 print(number_compare(2, 1))
 print(number_compare(1, 1))
+
+
+def single_letter_count(str_1, ch):
+    count = 0
+    for char in str_1.lower():
+        if char == ch.lower():
+            count += 1
+    return count
+
+
+print(single_letter_count("abcdaaddc", "d"))
