@@ -84,3 +84,24 @@ def single_letter_count(str_1, ch):
 
 
 print(single_letter_count("abcdaaddc", "d"))
+
+# Nested loop solution
+def multi_letter_count(passed_str):
+    multi_letter_dict = {}
+    for char in passed_str:
+        count = 0
+        for cur_char in passed_str:
+            if char == cur_char:
+                count = count + 1
+        multi_letter_dict[char] = count
+    return multi_letter_dict
+
+print(multi_letter_count("abcdaaddc"))
+
+
+# Solution using dictionary comprehension:
+
+def multiple_letter_count(passed_string):
+    return {char:passed_string.count(char) for char in passed_string}
+
+print(multiple_letter_count("awesome"))
