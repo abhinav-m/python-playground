@@ -105,3 +105,19 @@ def multiple_letter_count(passed_string):
     return {char:passed_string.count(char) for char in passed_string}
 
 print(multiple_letter_count("awesome"))
+
+def list_manipulation(l,method,position,value):
+    if method == "remove":
+        if position == "end":
+            return l.pop()
+        elif position == "beginning":
+            return l.pop(0)
+    elif method == "add":
+        if position == "beginning":
+             l.insert(0,value)
+        elif position == "end":
+             l.insert(len(l), value)
+        return l
+        
+print(list_manipulation([2,3,4,5],"add","beginning",1))
+print(list_manipulation([2,3,4,5],"add","end",6))
