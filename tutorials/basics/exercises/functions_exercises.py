@@ -59,3 +59,4 @@ def speak_dict_2(animal="dog"):
     if noise:
         return noise
     return "?"
+
