@@ -106,7 +106,7 @@ def multiple_letter_count(passed_string):
 
 print(multiple_letter_count("awesome"))
 
-def list_manipulation(l,method,position,value):
+def list_manipulation(l,method,position,value = None):
     if method == "remove":
         if position == "end":
             return l.pop()
@@ -121,3 +121,33 @@ def list_manipulation(l,method,position,value):
         
 print(list_manipulation([2,3,4,5],"add","beginning",1))
 print(list_manipulation([2,3,4,5],"add","end",6))
+
+
+def is_palindrome(passed_str):
+    start = 0 
+    end = len(passed_str) - 1
+    while(start <= end):
+        if passed_str[start] != passed_str[end]:
+            return False
+        start += 1
+        end -= 1
+    return True 
+
+print(is_palindrome("abca"))
+
+print(is_palindrome("abba"))
+# Using string slicing
+
+def is_palindrome_sliced(passed_str):
+    return passed_str == passed_str[::-1] # Reversing the order of the given string iterable
+
+# Using slicing and white space correction
+def is_palindrome_clean(passed_str):
+    passed_str = passed_str.replace(" ","")
+    return passed_str == passed_str[::-1] # Reversing the order of the given string iterable
+
+print(is_palindrome_sliced("abba"))
+print(is_palindrome_sliced("abca"))
+
+print(is_palindrome_clean("abba"))
+print(is_palindrome_clean("abca"))
