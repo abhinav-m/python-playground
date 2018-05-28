@@ -151,3 +151,14 @@ print(is_palindrome_sliced("abca"))
 
 print(is_palindrome_clean("abba"))
 print(is_palindrome_clean("abca"))
+
+def frequency(passed_list,search_term):
+    count = 0
+    for value in passed_list:
+        if value == search_term:
+            count+= 1
+    return count
+
+print(frequency([1,2,3,4,4,4],4))
+print(frequency([True,False,True,True,False],False))
+    
