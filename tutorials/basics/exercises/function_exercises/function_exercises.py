@@ -159,6 +159,9 @@ def frequency(passed_list,search_term):
             count+= 1
     return count
 
+def frequency_count(passed_iterable, search_term):
+    return passed_iterable.count(search_term)
+
 print(frequency([1,2,3,4,4,4],4))
 print(frequency([True,False,True,True,False],False))
     
