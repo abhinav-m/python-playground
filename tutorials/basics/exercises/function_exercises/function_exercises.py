@@ -164,4 +164,12 @@ def frequency_count(passed_iterable, search_term):
 
 print(frequency([1,2,3,4,4,4],4))
 print(frequency([True,False,True,True,False],False))
-    
+
+def multiply_even_numbers(l):
+    product = 1
+    for num in l:
+        if num % 2 == 0:
+            product = product * num
+    return product
+
+print(multiply_even_numbers([2,3,4,5,6]))
