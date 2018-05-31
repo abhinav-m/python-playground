@@ -173,3 +173,30 @@ def multiply_even_numbers(l):
     return product
 
 print(multiply_even_numbers([2,3,4,5,6]))
+
+def capitalize(passed_str):
+    return(passed_str[:1].upper() + passed_str[1:])
+capitalize("hello")
+
+def compact(passed_list):
+    return [item  for item in passed_list if item]
+
+print(compact([0,1,2,"",[], False, {}, None, "All done"])) # [1,2, "All done"]
+
+def intersection(list_1,list_2):
+   set_1 =   set(list_1)
+   set_2 = set(list_2)
+   return list(set_1.intersection(set_2))
+
+print(intersection(['a','b','z'],['x','y','z']))
+
+# solution using list comprehension
+def intersection_2(l1,l2):
+    return [ val for val in l1 if val in l2]
+
+# solution by using sets and finding their intersection
+def intersection_3(l1,l2):
+    return[val for val in set(l1) & set(l2)] 
+
+print(intersection_2(['a','b','z'],['x','y','z']))
+print(intersection_3(['a','b','z'],['x','y','z']))
