@@ -200,3 +200,12 @@ def intersection_3(l1,l2):
 
 print(intersection_2(['a','b','z'],['x','y','z']))
 print(intersection_3(['a','b','z'],['x','y','z']))
+
+
+def isOdd(num):
+    return num % 2 != 0
+
+def partition(l,cb):
+    return[[val for val in l if cb(val)] , [val for val in l if not cb(val)]]
+
+print(partition([1,2,3,4,5],isOdd))
