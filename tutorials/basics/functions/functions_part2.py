@@ -25,3 +25,19 @@ def contains_purple(*args):
 print(contains_purple("purple","orange",1,2,3,"green")) 
 
 print(contains_purple("red","blue","yellow"))
+
+#**kwargs -> Special parameter passed to a function, gathers value passed to a function in the form of a dictionary.
+#must start with **
+
+
+
+# Using keyword arguments (parameters are specified in function call)
+# Only works in the case we know the parameters, and order of parameters doesn't matter anymore
+# Note even though '=' operator is used in function call, this specifies it to be a keyword argument, and is not the normal assignment.
+
+def favorite_colors(**kwargs):
+    for person,color in kwargs.items(): #Instead of tuples ** gathers the value in the form a dictionary.
+        print(f"{person}s favourite color is {color}")
+
+favorite_colors(abhinav="red",dhruv="blue")
+
