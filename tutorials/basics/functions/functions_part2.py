@@ -35,9 +35,18 @@ print(contains_purple("red","blue","yellow"))
 # Only works in the case we know the parameters, and order of parameters doesn't matter anymore
 # Note even though '=' operator is used in function call, this specifies it to be a keyword argument, and is not the normal assignment.
 
-def favorite_colors(**kwargs):
+# def favorite_colors(**kwargs):
+#     for person,color in kwargs.items(): #Instead of tuples ** gathers the value in the form a dictionary.
+#         print(f"{person}s favourite color is {color}")
+
+# favorite_colors(abhinav="red",dhruv="blue")
+
+# Note , *args **kwargs both capture only the REMAINING values passed to the function if more values are mapped in the functions
+#earlier, they will be treated like so:
+
+def favorite_colors(dhruv,**kwargs):
     for person,color in kwargs.items(): #Instead of tuples ** gathers the value in the form a dictionary.
         print(f"{person}s favourite color is {color}")
 
+# Since we are passing parameterised (keyword arguments to the functions) 
 favorite_colors(abhinav="red",dhruv="blue")
-
