@@ -209,3 +209,11 @@ def partition(l,cb):
     return[[val for val in l if cb(val)] , [val for val in l if not cb(val)]]
 
 print(partition([1,2,3,4,5],isOdd))
+
+
+def combine_words(word,**kwargs):
+    if 'prefix' in kwargs:
+        return kwargs['prefix'] + word
+    elif 'suffix' in kwargs:
+        return word + kwargs['suffix']
+    return word

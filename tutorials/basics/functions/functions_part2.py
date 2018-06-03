@@ -47,6 +47,8 @@ print(contains_purple("red","blue","yellow"))
 def favorite_colors(dhruv,**kwargs):
     for person,color in kwargs.items(): #Instead of tuples ** gathers the value in the form a dictionary.
         print(f"{person}s favourite color is {color}")
+        print(dhruv)
 
-# Since we are passing parameterised (keyword arguments to the functions) 
+# Since we are passing parameterised (keyword arguments to the functions) order doesn't matter, note how "dhruv" is still
+# assigned it's value, and abhinav is assigned to rest.
 favorite_colors(abhinav="red",dhruv="blue")
