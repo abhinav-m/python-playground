@@ -52,3 +52,17 @@ def favorite_colors(dhruv,**kwargs):
 # Since we are passing parameterised (keyword arguments to the functions) order doesn't matter, note how "dhruv" is still
 # assigned it's value, and abhinav is assigned to rest.
 favorite_colors(abhinav="red",dhruv="blue")
+
+
+# Parameter ordering in functions
+# If all 4 parameter types are present, they must be in specified order:
+# parameters *args default parameters **kwargs
+
+def display_info(a,b,*args,name="Abhinav",**kwargs):
+    return [a,b,args,name,kwargs]
+#a,b -> 1,2
+# args gets assigned 3 (as a tuple)
+# default parameter name is still the same.
+# the rest of the keyword arguments get assigned as dictionary.
+# Output = [1, 2, (3,), 'Abhinav', {'sirname': 'Mishra', 'age': '25'}]
+print(display_info(1,2,3,sirname="Mishra",age="25"))
