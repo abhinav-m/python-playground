@@ -66,3 +66,6 @@ def display_info(a,b,*args,name="Abhinav",**kwargs):
 # the rest of the keyword arguments get assigned as dictionary.
 # Output = [1, 2, (3,), 'Abhinav', {'sirname': 'Mishra', 'age': '25'}]
 print(display_info(1,2,3,sirname="Mishra",age="25"))
+# Parameter ordering is important.
+# If all 4 parameter types are present, they must be in specified order:
+# parameters *args default parameters **kwargs

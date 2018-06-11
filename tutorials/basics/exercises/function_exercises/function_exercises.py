@@ -217,3 +217,19 @@ def combine_words(word,**kwargs):
     elif 'suffix' in kwargs:
         return word + kwargs['suffix']
     return word
+
+
+# argument unpacking:
+def sum_all_values(*args):
+    total = 0
+    for num in args:
+        total += num
+    print(total)
+
+# wont work
+#sum_all_values([1,2,3,4,5,6]) # throws error
+
+# To unpack a collection we can use the keyword * while passing values as parameters to function.
+
+collection = [1,2,3,4,5,6]
+sum_all_values(*collection) # unpacks collection in the form of a tuple.
