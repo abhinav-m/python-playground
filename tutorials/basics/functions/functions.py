@@ -94,3 +94,31 @@ full_name("Abhinav", "Mishra")
 # Only works in the case we know the parameters, and order of parameters doesn't matter anymore
 # Note even though '=' operator is used in function call, this specifies it to be a keyword argument, and is not the normal assignment.
 full_name(first_name="Mishra", last_name="Abhinav")
+
+
+# Unpacking a dictionary
+def display_names(first,second):
+    print(f"{first} says hello to {second}")
+
+names = {"first":"Colt","second":"Steele"}
+
+# works fine
+display_names("abhinav","mishra")
+
+# can work with named parameters as well:
+display_names(second="mishra",first="abhinav")
+
+# To do the same with dictionary unpacking:
+display_names(**names)
+
+
+## Unpacking a dictionary with more examples:
+
+def add_and_mult_nums(a,b,c,**kwargs):
+    print(a+b*c)
+    print("OTHER STUFF:")
+    print(kwargs)
+# note how the other things in the dictionary get's unpacked by **kwargs in the function definition
+data = dict(a=1,b=2,c=3,d=55,name="Tony")
+
+add_and_mult_nums(**data,animal="cat")
