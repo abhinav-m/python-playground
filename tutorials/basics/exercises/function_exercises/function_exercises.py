@@ -246,4 +246,30 @@ nums = [90,1,35,67,89,20,3,1,2,3,4,5,6,9,34,46,57,68,79,12,23,34,55,1,90,54,34,7
 
 result1 = count_sevens(1,4,7)
 
+# Unpacking the list and passing it as a tuple
 result2 = count_sevens(*nums)
+
+def calculate(**kwargs):
+    # Switch operation alternate in python.
+    operation_lookup = {
+        'add':kwargs.get('first',0) + kwargs.get('second',0),
+        'subtract':kwargs.get('first',0) - kwargs.get('second',0),
+        'divide':kwargs.get('first',0) / kwargs.get('second',0),
+        'subtract':kwargs.get('first',0) * kwargs.get('second',0),
+    }
+    # Check if float is present in kwargs, second parameter is default value.
+    is_float = kwargs.get('make_float',False)
+    # Check operation value
+    operation_value = operation_lookup[kwargs.get('operation','')]
+    # Assign result on the basis of keyword args check.
+    if is_float:
+        result = f"{kwargs.get('message','The result is')} ,{float(operation_value)}"
+    else:
+        result = f"{kwargs.get('message','The result is')} , {int(operation_value)}"
+    return result
+
+calc_dict = {"first":1,"second":2,"make_float":True,"operation":'add',"message":"The final value is"}
+
+# To check 
+print(calculate(**calc_dict))
+        
